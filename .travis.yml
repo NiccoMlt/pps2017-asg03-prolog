@@ -1,0 +1,17 @@
+language: scala
+
+before_install:
+  - chmod +x gradlew
+
+jdk:
+  - oraclejdk8
+scala:
+  - 2.12.7
+
+branches:
+  only:
+  - master
+  - develop
+
+script:
+- gradle clean build
