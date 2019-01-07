@@ -1,4 +1,3 @@
-
 # Created by https://www.gitignore.io/api/git,tex,osx,java,scala,linux,macos,latex,gradle,windows,eclipse,intellij
 # Edit at https://www.gitignore.io/?templates=git,tex,osx,java,scala,linux,macos,latex,gradle,windows,eclipse,intellij
 
@@ -97,6 +96,9 @@ local.properties
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+.idea/**/hydra.xml
+.idea/markdown-navigator.xml
+.idea/markdown-navigator
 
 # Generated files
 .idea/**/contentModel.xml
@@ -118,9 +120,15 @@ local.properties
 # When using Gradle or Maven with auto-import, you should exclude module files,
 # since they will be recreated, and may cause churn.  Uncomment if using
 # auto-import.
-# .idea/modules.xml
-# .idea/*.iml
-# .idea/modules
+.idea/modules.xml
+.idea/*.iml
+.idea/modules
+.idea/.name
+.idea/sbt.xml
+.idea/compiler.xml
+.idea/scala_compiler.xml
+.idea/scala_settings.xml
+.idea/jarRepositories.xml
 
 # CMake
 cmake-build-*/
@@ -160,7 +168,7 @@ fabric.properties
 
 # *.iml
 # modules.xml
-# .idea/misc.xml
+.idea/misc.xml
 # *.ipr
 
 # Sonarlint plugin
