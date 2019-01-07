@@ -40,5 +40,5 @@ dependencies {
 
 application {
     // Define the main class for the application
-    mainClassName = "it.unibo.pps17.tgol.App"
+    mainClassName = "it.unibo.pps17.fb.Main"
 }
