@@ -1,0 +1,25 @@
+language: scala
+
+before_install:
+- chmod -R +x src
+- chmod +x gradlew
+
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+
+jdk: oraclejdk8
+
+scala: 2.12.7
+
+branches:
+  only:
+  - master
+  - develop
+
+script: ./gradlew clean build
