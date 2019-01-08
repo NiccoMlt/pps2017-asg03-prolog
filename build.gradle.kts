@@ -52,6 +52,7 @@ dependencies {
     // Libraries
     implementation("com.github.scopt:scopt_$scalaBinary:${Versions.scopt}")
     implementation("org.scalaz:scalaz-core_$scalaBinary:${Versions.scalaz}")
+    implementation("it.unibo.alice.tuprolog:tuprolog:${Versions.tuprolog}")
 }
 
 java {

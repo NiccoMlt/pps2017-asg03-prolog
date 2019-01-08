@@ -8,9 +8,9 @@ object Config {
 
     object Proj {
         val group = "it.unibo.pps17"
-        val artifactId = "fb"
-        val longName = "File Browser"
-        val description = "File navigator that counts files and shows types"
+        val artifactId = "sudoku"
+        val longName = "Sudoku"
+        val description = "Sudoku application with prolog"
         val version = "0.0.1"
     }
 
@@ -51,6 +51,7 @@ object Config {
         val logback = "1.2.3"
         val scalaLogging = "3.9.0"
         val scalaz = "7.2.27"
+        val tuprolog = "3.3.0"
     }
 
     /** SpotBugs-related versions. */

@@ -1,4 +1,4 @@
-package it.unibo.pps17.fb;
+package it.unibo.pps17.sudoku;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
