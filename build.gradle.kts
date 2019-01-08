@@ -58,6 +58,7 @@ dependencies {
 java {
     sourceCompatibility = Versions.jdk
     targetCompatibility = Versions.jdk
+    sourceSets["main"].java.srcDir("src/main/prolog")
 }
 
 application {
