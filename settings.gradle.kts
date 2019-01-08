@@ -1,1 +1,1 @@
-rootProject.name = "File Browser"
+rootProject.name = Config.Proj.longName
