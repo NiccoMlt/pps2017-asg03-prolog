@@ -22,4 +22,6 @@ branches:
   - master
   - develop
 
-script: ./gradlew clean build
+script:
+  - cd ./project
+  - ./gradlew clean build
