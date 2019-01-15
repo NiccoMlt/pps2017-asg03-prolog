@@ -1,8 +1,8 @@
 language: scala
 
 before_install:
-- chmod -R +x src
-- chmod +x gradlew
+- chmod -R +x project/src
+- chmod +x project/gradlew
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
