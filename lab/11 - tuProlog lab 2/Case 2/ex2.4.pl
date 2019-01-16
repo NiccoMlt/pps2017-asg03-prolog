@@ -5,6 +5,7 @@
 % possibly use findall, looking for e(Node,_) combined
 % with member(?Elem,?List)
 
+% LIBRARY PREDICATES (from 2p documentation)
 % findall/3 : findall(?term, +callable_term, ?list)
 % findall(Template, Goal, List)
 %
