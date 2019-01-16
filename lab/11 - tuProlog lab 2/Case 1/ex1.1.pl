@@ -11,7 +11,7 @@ dropFirst(X, [X|T], T) :- !.
 dropFirst(X, [H|Xs], [H|L]) :- dropFirst(X, Xs, L).
 
 % dropLast(?Elem, ?List, ?OutList)
-dropLast(X, [X|T], T) :- not(dropLast(X, T, _)).
+dropLast(X, [X|T], T) :- not(dropLast(X, T, _)), !.
 dropLast(X, [H|Xs], [H|L]) :- dropLast(X, Xs, L).
 
 % dropAll(?Elem, ?List, ?OutList)
