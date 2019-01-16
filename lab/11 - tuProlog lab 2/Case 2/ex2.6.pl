@@ -22,7 +22,8 @@ anypath([e(_, _) | T], N1, N2, Out):-
 % • Implement it using the above suggestions
 % • allreaching([e(1,2),e(2,3),e(3,5)],1,[2,3,5]).
   
-allreaching(G, N, L) :-
-  findall(X, anypath(G, N, X, _), L).
+allreaching(G, N, Set) :-
+  findall(X, anypath(G, N, X, _), List),
+  setof(Y, member(Y, List), Set), !.
 
 % BECAUSE ANYPATH SUPPOSES THAT THE GRAPH IS ORIENTED, THIS ALSO DOES
