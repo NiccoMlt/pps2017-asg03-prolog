@@ -43,3 +43,14 @@ next(T, _, even, T) :- not(member(empty, Table)).
 next(T, P, R, N) :-
   move(T, P, N),
   check(N, P, R).
+
+other(x, o).
+other(o, x).
+
+game(T, P, even, [T, L]) :- next(T, P, even, L).
+game(T, P, win(P), [T, L]) :- next(T, P, win(P), L).
+
+game(T, P1, R, [T | L]) :-
+  next(T, P1, nothing, N),
+  other(P1, P2),
+  game(N, P2, R, L).
