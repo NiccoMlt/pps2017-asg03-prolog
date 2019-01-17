@@ -4,16 +4,6 @@
 % inv(List,List)
 % example: inv([1,2,3],[3,2,1]).
 
-% Head recursive inv %
-% last([], X, [X]).
-% last([H|T], X, [H|L]) :- last(T, X, L).
-%
-% inv([], []).
-% inv([X|Xs], Inv) :-
-%   inv(Xs, Ys),
-%   last(Ys, X, Inv).
-
-% Tail recursive inv %
 inv(List, Inv) :- inv(List, [], Inv).
 
 inv([], Inv, Inv).

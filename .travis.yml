@@ -15,7 +15,8 @@ cache:
 
 jdk: oraclejdk8
 
-scala: 2.12.7
+scala:
+  - 2.12.7
 
 branches:
   only:
@@ -24,4 +25,4 @@ branches:
 
 script:
   - cd ./project
-  - ./gradlew clean build
+  - ./gradlew clean build test

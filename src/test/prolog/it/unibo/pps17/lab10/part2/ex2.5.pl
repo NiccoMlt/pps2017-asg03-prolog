@@ -10,21 +10,6 @@
 %   – first develop: max(List,Max,TempMax)
 %   – where TempMax is the maximum found so far (initially it is the first number in the list.)
 
-
-% HEAD RECURSIVE SOLUTION %
-% max([X], X).
-%
-% max([H|T], Max) :-
-%   max(T, Max2),
-%   H >= Max2,
-%   Max = H.
-%
-% max([H|T], Max) :-
-%   max(T, Max2),
-%   H < Max2,
-%   Max = Max2.
-
-% TAIL RECURSIVE SOLUTION %
 max([X|Xs], M) :- max(Xs, M, X).
 
 max([], M, M).
