@@ -1,7 +1,0 @@
-*.pdf
-bin
-.idea/workspace.xml
-.idea/libraries
-out
-project
-target
