@@ -14,7 +14,7 @@
 
 % • Implement it!
 % • reaching([e(1,2),e(1,3),e(2,3)],1,L). -> L/[2,3]
-% • reaching([e(1,2),e(1,2),e(2,3)],1,L). -> L/[2,2]).
+% • reaching([e(1,2),e(1,2),e(2,3)],1,L). -> L/[2,2]
 
 reaching(G, N, L) :-
   findall(X, member(e(N, X), G), L1),
