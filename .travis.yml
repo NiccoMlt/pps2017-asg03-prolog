@@ -1,8 +1,8 @@
 language: scala
 
 before_install:
-- chmod -R +x project/src
-- chmod +x project/gradlew
+- chmod -R +x src
+- chmod +x gradlew
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
@@ -15,7 +15,8 @@ cache:
 
 jdk: oraclejdk8
 
-scala: 2.12.7
+scala:
+  - 2.12.7
 
 branches:
   only:
@@ -23,5 +24,4 @@ branches:
   - develop
 
 script:
-  - cd ./project
-  - ./gradlew clean build
+  - ./gradlew clean build test
