@@ -7,9 +7,6 @@ import org.junit.Test;
 
 import java.io.*;
 import java.net.URISyntaxException;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.stream.StreamSupport;
 
 public class TestEx11 extends TestFile {
 

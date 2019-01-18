@@ -72,38 +72,64 @@
     \topskip 0 in
     
 \title{\vspace{-70pt}Assignment 03 -- ``Prolog''}
-\author{Niccolò Maltoni, matr: 840825, email: {\url{niccolo.maltoni@studio.unibo.it}}\\ repo: {\url{https://github.com/NiccoMlt/pps2017-asg03-prolog}}}
+\author{Niccolò Maltoni, matr: 840825, email: {\href{mailto:niccolo.maltoni@studio.unibo.it}{niccolo.maltoni@studio.unibo.it}}\\ repo: {\url{https://github.com/NiccoMlt/pps2017-asg03-prolog}}}
 \date{18/01/2018}
 
 
 \begin{document}
 
-\maketitle
-\vspace{-30pt}
+    \maketitle
+    \vspace{-30pt}
 
-\subsection*{Description of the code you provide}
+    \subsection*{Description of the code you provide}
 
-\begin{itemize}
- \item Full solution to labs 10 and 11 % TODO
- \item Full solution to lab 11, along with additional functions % TODO
- \item Created and compared Prolog vs Scala implementation of some algorithms % TODO
- \item Created a mini-game calling Prolog intelligence % TODO
- \item \ldots % TODO
-\end{itemize}
+        \begin{itemize}
+            \item 
+                Full solution to labs 10 along with final exercises: \texttt{inv}, \texttt{double}, \texttt{times}, \texttt{proj}.
+                \begin{itemize}
+                    \item 
+                        From commit \href{https://github.com/NiccoMlt/pps2017-asg03-prolog/commit/6ec17b42595bba0504936dc0f50e471af492fcbc}{6ec17b4}
+                        to commit \href{https://github.com/NiccoMlt/pps2017-asg03-prolog/commit/0aed289a42569f624cef6a5fbf398b21d8b5f46b}{0aed289}
+                    \item Necessary time: $\sim$~3 hours
+                \end{itemize}
 
-\subsection*{Techniques used}
+            \item 
+                Full solution to lab 11, along with additional functions and Tic Tac Toe.
+                \begin{itemize}
+                    \item 
+                        From commit \href{https://github.com/NiccoMlt/pps2017-asg03-prolog/commit/c91f47c1fa5a28ddef65ef72a5ad05dfd19304ea}{c91f47c}
+                        to commit \href{https://github.com/NiccoMlt/pps2017-asg03-prolog/commit/6da83cfa26fff7ec16e4b5fdd3f872c505d26b4e}{6da83cf}
+                    \item Necessary time: $\sim$~4 hours
+                \end{itemize}
 
-\begin{itemize}
- \item Prolog search-space abilities % TODO
- \item Prolog use of unification and variables % TODO
- \item Java-tuProlog integration % TODO
- \item Compared monads and LP % TODO
- \item \ldots % TODO
-\end{itemize}
+            \item 
+                Created tests for Prolog with JUnit4 and Java-Prolog integration, with Travis CI building it at commit.
+                \begin{itemize}
+                    \item
+                        From commit \href{https://github.com/NiccoMlt/pps2017-asg03-prolog/commit/ab8379820fc5f2977b4551446f4358709efe9189}{ab83798}
+                        to commit \href{https://github.com/NiccoMlt/pps2017-asg03-prolog/commit/51034ff564fc238570cdb939ed122b70abbc834d}{51034ff}
+                    \item Necessary time: $\sim$~2 hours
+                \end{itemize}
+        \end{itemize}
 
-\subsection*{Self-evaluation}
+    \subsection*{Techniques used}
 
-\ldots % TODO
+        \begin{itemize}
+            \item Prolog search-space abilities;
+            \item Prolog use of unification;
+            \item Prolog use of variables (use of universal facts);
+            \item Prolog use of substitutions;
+            \item Prolog use of rules;
+            \item Prolog use of fully relationality;
+            \item Prolog use of tail recursion;
+            \item Prolog use of predicate 0-ary \texttt{cut} (\texttt{!});
+            \item Prolog use of advanced library predicates like \texttt{findall/3}, \texttt{member/2} and \texttt{setof/3};
+            \item Java-tuProlog integration and testing;
+        \end{itemize}
+
+    \subsection*{Self-evaluation}
+
+        \ldots % TODO
  
 \end{document}
     
